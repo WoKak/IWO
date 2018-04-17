@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Transportex-Pol</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+<div class="jumbotron">
+    <h1 class="display-4">Transportex-Pol</h1>
+    <p>Kilometry pełne uśmiechu</p>
+</div>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link" href="../mainpage.html">Strona główna</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Autokary</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Kierowcy</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Statystyki</a>
+    </li>
+</ul>
+<div class="row">
+    <div class="col-9">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Marka</th>
+                <th scope="col">Model</th>
+                <th scope="col">Typ</th>
+                <th scope="col">Ilość miejsc</th>
+                <th scope="col">Status</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Setra</td>
+                <td>516 HDH</td>
+                <td>Autokar</td>
+                <td>59</td>
+                <td>Sprawny</td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">Info</button>
+                    <a href="service-bus.html">
+                        <button type="button" class="btn btn-outline-primary">Wyślij do serwisu</button>
+                    </a>
+                    <a href="edit-bus.html">
+                        <button type="button" class="btn btn-outline-primary">Edycja</button>
+                    </a>
+                    <button type="button" class="btn btn-danger">Usuń</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Mercedes</td>
+                <td>Sprinter</td>
+                <td>Bus</td>
+                <td>20</td>
+                <td>W serwisie</td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">Info</button>
+                    <a href="service-bus.html">
+                        <button type="button" class="btn btn-outline-primary">Odbierz z serwisu</button>
+                    </a>
+                    <a href="edit-bus.html">
+                        <button type="button" class="btn btn-outline-primary">Edycja</button>
+                    </a>
+                    <button type="button" class="btn btn-danger">Usuń</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>VDL</td>
+                <td>Futura</td>
+                <td>Autokar</td>
+                <td>67</td>
+                <td>Sprawny</td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">Info</button>
+                    <a href="service-bus.html">
+                        <button type="button" class="btn btn-outline-primary">Wyślij do serwisu</button>
+                    </a>
+                    <a href="edit-bus.html">
+                        <button type="button" class="btn btn-outline-primary">Edycja</button>
+                    </a>
+                    <button type="button" class="btn btn-danger">Usuń</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-3">
+        <div class="alert alert-primary">
+            <form action="bus-list.html">
+                <div class="form-group">
+                    <label for="marka">Marka:</label>
+                    <input type="text" class="form-control" id="marka">
+                </div>
+                <div class="form-group">
+                    <label for="model">Model:</label>
+                    <input type="text" class="form-control" id="model">
+                </div>
+                <div class="form-group">
+                    <label for="typ">Typ:</label>
+                    <input type="text" class="form-control" id="typ">
+                </div>
+                <div class="form-group">
+                    <label for="miejsca">Ilość miejsc:</label>
+                    <input type="text" class="form-control" id="miejsca">
+                </div>
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <input type="text" class="form-control" id="status">
+                </div>
+                <button type="submit" class="btn btn-primary">Filtruj</button>
+            </form>
+        </div>
+        <a href="new-bus.html" class="alert-link">
+            <button type="button" class="btn btn-primary">Dodaj autokar</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>
