@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Transportex-Pol</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+<div class="jumbotron">
+    <h1 class="display-4">Transportex-Pol</h1>
+    <p>Kilometry pełne uśmiechu</p>
+</div>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link" href="../mainpage.html">Strona główna</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="#">Autokary</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Kierowcy</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Statystyki</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="../prop-list/prop-list.html">Propozycje połączeń</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="../prop-list/connection-list.html">Połączenia</a>
+    </li>
+</ul>
+<div class="row">
+    <div class="col-9">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Użytkownik</th>
+                <th scope="col">Przystanek początkowy</th>
+                <th scope="col">Przystanek końcowy</th>
+                <th scope="col">Odległość</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>John Boo</td>
+                <td>Warszawa</td>
+                <td>Poznań</td>
+                <td>310</td>
+                <td>
+                    <a href="add-connection.html">
+                        <button type="button" class="btn btn-outline-primary">Akceptuj</button>
+                    </a>
+                    <button type="button" class="btn btn-danger"  onclick="window.confirm('Czy na pewno chcesz odrzucić propozycję?')" >Usuń</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>MaryBrown</td>
+                <td>Poznań</td>
+                <td>Warszawa</td>
+                <td>310</td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">Akceptuj</button>
+                    <button type="button" class="btn btn-danger"  onclick="window.confirm('Czy na pewno chcesz odrzucić propozycję?')" >Usuń</button>
+                </td>
+            </tr>
+            <tr id="thirdRow">
+                <th scope="row">3</th>
+                <td>Anonimowy</td>
+                <td>Warszawa</td>
+                <td>Skaryszew</td>
+                <td>120</td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">Akceptuj</button>
+                    <button type="button" class="btn btn-danger"  onclick="if(confirm('Czy na pewno chcesz odrzucić propozycję?')) saveandsubmit();" >Usuń</button>
+                    <script>
+                        function saveandsubmit(){
+                            document.getElementById("thirdRow").style.visibility = "hidden";
+                        }
+                    </script>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
