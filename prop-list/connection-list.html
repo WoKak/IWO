@@ -7,7 +7,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
 
-        .btn2{
+        .btn2 {
             width: 100%;
         }
     </style>
@@ -48,7 +48,8 @@
                 </th>
                 <th scope="col">
                     <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Data
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -59,7 +60,7 @@
                     </div>
                 </th>
                 <th>
-                    <button type="button" class="btn btn-primary"  >Szukaj</button>
+                    <button type="button" class="btn btn-primary">Szukaj</button>
                 </th>
             </tr>
             </thead>
@@ -87,12 +88,12 @@
                 <td>21/05/2018, 14:00</td>
                 <td>50</td>
                 <td>
-                    <button type="button" class="btn btn-success"  >Rezerwuj</button>
-                    <button type="button" class="btn btn-warning"  >Edytuj</button>
+                    <button type="button" class="btn btn-outline-primary">Rezerwuj</button>
+                    <button type="button" class="btn btn-outline-primary">Edytuj</button>
                     <a href="stats.html" class="alert-link">
-                        <button type="button" class="btn btn-primary"  >Statystyki</button>
+                        <button type="button" class="btn btn-outline-primary">Statystyki</button>
                     </a>
-
+                    <button type="button" class="btn btn-danger">Usuń</button>
                 </td>
             </tr>
             <tr>
@@ -102,9 +103,10 @@
                 <td>23/05/2018 14:00</td>
                 <td>50</td>
                 <td>
-                    <button type="button" class="btn btn-success"  >Rezerwuj</button>
-                    <button type="button" class="btn btn-warning"  >Edytuj</button>
-                    <button type="button" class="btn btn-primary"  >Statystyki</button>
+                    <button type="button" class="btn btn-outline-primary">Rezerwuj</button>
+                    <button type="button" class="btn btn-outline-primary">Edytuj</button>
+                    <button type="button" class="btn btn-outline-primary">Statystyki</button>
+                    <button type="button" class="btn btn-danger">Usuń</button>
                 </td>
             </tr>
             <tr id="thirdRow">
@@ -114,93 +116,52 @@
                 <td>13/05/2018, 14:00</td>
                 <td>50</td>
                 <td>
-                    <button type="button" class="btn btn-success"  >Rezerwuj</button>
-                    <button type="button" class="btn btn-warning"  >Edytuj</button>
-                    <button type="button" class="btn btn-primary"  >Statystyki</button>
+                    <button type="button" class="btn btn-outline-primary">Rezerwuj</button>
+                    <button type="button" class="btn btn-outline-primary">Edytuj</button>
+                    <button type="button" class="btn btn-outline-primary">Statystyki</button>
+                    <button type="button" class="btn btn-danger">Usuń</button>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
     <div class="col-3">
-        <div>
-            <form action="connection-list.html" class="alert alert-light">
-                <div class="form-group justify-content-center text-center">
-                    <div class="dropdown ">
-                        <button class="btn btn2 btn-light dropdown-toggle" type="button" id="dropdownMenuButtonForAmountOfSeats" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ilość miejsc
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">35</a>
-                            <a class="dropdown-item" href="#">40</a>
-                            <a class="dropdown-item" href="#">45</a>
-                        </div>
-                    </div>
+        <div class="alert alert-primary">
+            <form action="bus-list.html">
+                <div class="form-group">
+                    <label for="marka">Ilość miejsc:</label>
+                    <input type="text" class="form-control" id="marka">
                 </div>
                 <div class="form-group">
-                    <label for="typ">Cena:</label>
-                    <div class="modal-body row">
-                        <div class="col-md-6">
-                            <div class="form-group ustify-content-center text-center">
-                                <div class="dropdown ">
-                                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButtonOd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Od
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">20</a>
-                                        <a class="dropdown-item" href="#">30</a>
-                                        <a class="dropdown-item" href="#">40</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group ustify-content-center text-center">
-                                <div class="dropdown ">
-                                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButtonDo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Do
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">30</a>
-                                        <a class="dropdown-item" href="#">40</a>
-                                        <a class="dropdown-item" href="#">50</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <label for="model">Od:</label>
+                    <input type="text" class="form-control" id="model">
                 </div>
-                <div class="form-group justify-content-center text-center">
-                    <div class="dropdown ">
-                        <button class="btn btn2 btn-light dropdown-toggle" type="button" id="dropdownMenuButtonForAdditional" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dodatkowe usługi
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Dodatkowa usługa1</a>
-                            <a class="dropdown-item" href="#">Dodatkowa usługa2</a>
-                            <a class="dropdown-item" href="#">Dodatkowa usługa3</a>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="typ">Do:</label>
+                    <input type="text" class="form-control" id="typ">
+                </div>
+                <div class="form-group">
+                    <label for="miejsca">Dodatkowe usługi:</label>
+                    <input type="text" class="form-control" id="miejsca">
                 </div>
                 <button type="submit" class="btn btn-primary">Filtruj</button>
             </form>
         </div>
-
-        <a href="add-connection.html" class="alert-link">
-            <button type="button" class="btn btn2 btn-success">Dodaj Połączenie</button>
+        <a href="new-bus.html" class="alert-link">
+            <button type="button" class="btn btn-primary">Dodaj autokar</button>
         </a>
-            <button type="button" class="btn btn2 btn-danger" onclick="if(confirm('Czy na pewno chcesz usunąć połączenia?')) saveandsubmit();">Usuń Połączenie</button>
-        <script>
-            function saveandsubmit(){
-                document.getElementById("thirdRow").style.visibility = "hidden";
-            }
-        </script>
     </div>
 </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
