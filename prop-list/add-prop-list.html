@@ -12,50 +12,53 @@
 </div>
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link" href="#">Strona główna</a>
+        <a class="nav-link " href="../mainpage.html">Strona główna</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link active" href="../bus-list/bus-list.html">Autokary</a>
+        <a class="nav-link" href="../bus-list/bus-list.html">Autokary</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../prop-list/add-prop-list.html">Dodaj propozycję połączeń</a>
+        <a class="nav-link" href="add-prop-list.html">Dodaj propozycję połączeń</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../prop-list/prop-list.html">Propozycje połączeń</a>
+        <a class="nav-link" href="prop-list.html">Propozycje połączeń</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../prop-list/connection-list.html">Połączenia</a>
+        <a class="nav-link" href="connection-list.html">Połączenia</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../prop-list/add-connection.html">Nowe połączenie</a>
+        <a class="nav-link " href="add-connection.html">Nowe połączenie</a>
     </li>
 </ul>
 <div class="row">
     <div class="col">
     </div>
     <div class="col-6">
-        <form  action="bus-list.html">
+        <form  action="connection-list.html">
             <div class="form-group">
-                <label for="marka">Marka:</label>
+                <label for="marka">Użytkownik:</label>
                 <input type="text" class="form-control" id="marka">
             </div>
             <div class="form-group">
-                <label for="model">Model:</label>
+                <label for="model">Przystanek początkowy:</label>
                 <input type="text" class="form-control" id="model">
             </div>
             <div class="form-group">
-                <label for="typ">Typ:</label>
+                <label for="typ">Przystanek końcowy:</label>
                 <input type="text" class="form-control" id="typ">
             </div>
             <div class="form-group">
-                <label for="miejsca">Ilość miejsc:</label>
+                <label for="miejsca">Odległość:</label>
                 <input type="text" class="form-control" id="miejsca">
             </div>
             <div class="form-group">
-                <label for="status">Status:</label>
+                <label for="status">Cena:</label>
                 <input type="text" class="form-control" id="status">
             </div>
-            <button type="submit" class="btn btn-primary" onclick="window.alert('Autokar dodany!')">Dodaj autokar</button>
+            <button type="submit" class="btn btn-primary" onclick="window.alert('Propozycja połączenia została dodana!')">Dodaj propozycję połączenia</button>
+            <a href="connection-list.html" class="alert-link">
+                <button type="button" class="btn btn-outline-primary">Anuluj</button>
+            </a>
         </form>
     </div>
     <div class="col">
